@@ -1,0 +1,51 @@
+/* Rumbo: listas agrupadas al estilo iOS, tinta casi negra y un solo acento verde. Solo modo claro por ahora.
+   Valores del tablero "Sistema de diseño" del artefacto de la propuesta. */
+:root {
+  --rb-bg: #f2f2f7;
+  --rb-card: #ffffff;
+  --rb-ink: #111111;
+  --rb-ink-2: #333336;
+  --rb-ink-3: #3a3a3c;
+  /* Texto secundario del sistema de diseño (7:1 sobre el fondo) */
+  --rb-muted: #55555a;
+  /* Íconos de estado normales (en el teléfono, subiendo, sincronizado): grises y sin texto */
+  --rb-icon: #8e8e93;
+  --rb-neutral-border: #c7c7cc;
+  --rb-line: #e5e5ea;
+  --rb-chevron: #aeaeb2;
+  --rb-segment: #e3e3e8;
+  --rb-accent: #16815f;
+  --rb-accent-dark: #0f5e45;
+  --rb-accent-soft: #e3f2ec;
+  --rb-warn: #b45309;
+  --rb-warn-dot: #d97706;
+  --rb-warn-soft: #fff4e5;
+  /* Atención: lo único en ámbar es lo que pide una acción */
+  --rb-attention: #fff4e5;
+  --rb-attention-ink: #8a4b08;
+  --rb-attention-strong: #9a4a06;
+  --rb-attention-deep: #6b3a06;
+  --rb-blue: #2f5bea;
+  --rb-danger: #b42318;
+  --rb-font: 'Geist', system-ui, -apple-system, sans-serif;
+
+  --ion-font-family: var(--rb-font);
+  --ion-background-color: var(--rb-bg);
+  --ion-text-color: var(--rb-ink);
+  --ion-toolbar-background: var(--rb-bg);
+  --ion-item-background: #ffffff;
+
+  --ion-color-primary: #16815f;
+  --ion-color-primary-rgb: 22, 129, 95;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #137254;
+  --ion-color-primary-tint: #2d8e6f;
+
+  --ion-color-danger: #b42318;
+  --ion-color-danger-rgb: 180, 35, 24;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #9e1f15;
+  --ion-color-danger-tint: #bc392f;
+}

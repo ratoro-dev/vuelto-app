@@ -1,0 +1,143 @@
+/*
+ * Estilos de Rumbo, sacados de la propuesta (canvas "Rumbo — propuesta app").
+ * Las pantallas usan HTML propio dentro de <ion-content> en vez de ion-item/ion-toolbar
+ * para que se vean igual en iOS y Android.
+ */
+
+/* ---------- página ---------- */
+ion-content.rb-page { --background: var(--rb-bg); }
+.rb-wrap {
+  display: flex; flex-direction: column; gap: 18px;
+  padding: calc(env(safe-area-inset-top, 0px) + 12px) 16px 28px;
+  color: var(--rb-ink); font-family: var(--rb-font); font-size: 16px;
+}
+/* reset sin especificidad: cualquier clase de abajo le gana */
+:where(.rb-wrap, .rb-sheet) :where(button) { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-align: left; }
+:where(.rb-wrap, .rb-sheet) :where(input, select, textarea) { font: inherit; }
+:where(.rb-wrap) :where(a) { color: var(--rb-accent); text-decoration: none; }
+
+/* ---------- tipografía ---------- */
+.rb-title { margin: 0; padding: 8px 4px 0; font-size: 32px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; }
+.rb-big { font-size: 46px; font-weight: 600; letter-spacing: -0.03em; line-height: 1; font-variant-numeric: tabular-nums; }
+.rb-mid { font-size: 32px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.05; font-variant-numeric: tabular-nums; }
+.rb-label { font-size: 14px; font-weight: 600; color: var(--rb-muted); text-transform: uppercase; letter-spacing: 0.04em; padding: 0 4px; }
+.rb-muted { color: var(--rb-muted); }
+.rb-small { font-size: 14px; color: var(--rb-muted); }
+.rb-note { font-size: 14px; line-height: 1.5; color: var(--rb-muted); padding: 0 4px; }
+.rb-amount { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.rb-warn { color: var(--rb-warn); }
+.rb-good { color: var(--rb-accent); }
+
+/* ---------- barra superior: Cancelar · Título · Guardar ---------- */
+.rb-navbar { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); column-gap: 8px; align-items: center; min-height: 44px; }
+.rb-navbar .title { font-size: 17px; font-weight: 600; }
+.rb-navbar .end { justify-self: end; }
+.rb-wrap .rb-navlink { min-height: 44px; min-width: 0; display: flex; align-items: center; gap: 2px; font-size: 16px; color: var(--rb-accent); white-space: nowrap; overflow: hidden; }
+.rb-wrap .rb-navlink.strong { font-weight: 600; }
+.rb-wrap .rb-navlink:disabled { color: var(--rb-chevron); cursor: default; }
+
+/* ---------- grupos y filas ---------- */
+.rb-section { display: flex; flex-direction: column; gap: 6px; }
+.rb-section-head { display: flex; justify-content: space-between; align-items: baseline; padding: 0 4px; }
+.rb-group { background: var(--rb-card); border-radius: 14px; padding: 0 14px; }
+.rb-card { background: var(--rb-card); border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+.rb-row {
+  width: 100%; min-height: 56px; display: flex; align-items: center; gap: 12px;
+  border-bottom: 1px solid var(--rb-line); font-size: 16px; padding: 8px 0; box-sizing: border-box;
+}
+.rb-row:last-child { border-bottom: 0; }
+.rb-row .grow { flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.rb-row .sub { font-size: 13px; color: var(--rb-muted); }
+.rb-row .sub.rb-warn, .rb-row .value.rb-warn { color: var(--rb-warn); }
+.rb-row .end { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
+.rb-row .value { color: var(--rb-muted); display: flex; align-items: center; gap: 6px; }
+.rb-stack { display: flex; flex-direction: column; gap: 8px; padding: 13px 0; border-bottom: 1px solid var(--rb-line); }
+.rb-stack:last-child { border-bottom: 0; }
+.rb-icon-circle { width: 36px; height: 36px; border-radius: 50%; background: var(--rb-bg); color: var(--rb-ink); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+
+/* ---------- progreso ---------- */
+.rb-progress { height: 4px; border-radius: 2px; background: var(--rb-line); overflow: hidden; }
+.rb-progress > span { display: block; height: 100%; border-radius: 2px; background: var(--rb-accent); }
+.rb-progress.warn > span { background: var(--rb-warn); }
+.rb-progress.ink > span { background: var(--rb-ink); }
+
+/* ---------- control segmentado ---------- */
+.rb-segment { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); padding: 2px; border-radius: 9px; background: var(--rb-segment); }
+.rb-wrap .rb-segment button { height: 32px; border-radius: 7px; font-size: 13px; text-align: center; color: var(--rb-ink); }
+.rb-wrap .rb-segment button.on { background: #fff; font-weight: 600; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); }
+
+/* ---------- botones ---------- */
+/* Principal: una por pantalla, abajo. Secundaria: avanza sin terminar. Corrección: reemplaza a la principal
+   hasta resolverse. Neutra: alternativa dentro de un bloque. Suave: acciones chicas dentro de una tarjeta. */
+.rb-wrap .rb-btn {
+  min-height: 52px; border-radius: 14px; background: var(--rb-card); color: var(--rb-accent);
+  font-size: 16px; font-weight: 600; text-align: center; display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%;
+}
+.rb-wrap .rb-btn.primary { background: var(--rb-accent); color: #fff; }
+.rb-wrap .rb-btn.secondary { background: #fff; color: var(--rb-accent); box-shadow: inset 0 0 0 1.5px var(--rb-accent); font-size: 15px; }
+.rb-wrap .rb-btn.fix { background: var(--rb-attention); color: var(--rb-attention-deep); box-shadow: inset 0 0 0 2px var(--rb-warn); }
+.rb-wrap .rb-btn.neutral { min-height: 44px; border-radius: 12px; background: #fff; color: var(--rb-ink); box-shadow: inset 0 0 0 1.5px var(--rb-neutral-border); font-size: 15px; font-weight: 500; }
+.rb-wrap .rb-btn.soft { min-height: 40px; width: auto; padding: 0 14px; border-radius: 10px; background: var(--rb-bg); color: var(--rb-accent); font-size: 14px; font-weight: 500; }
+.rb-wrap .rb-btn.danger { color: var(--rb-danger); }
+.rb-wrap .rb-btn:disabled { background: var(--rb-segment); color: var(--rb-muted); box-shadow: none; cursor: default; }
+/* Filtros: 40 px, seleccionado = acento */
+.rb-wrap .rb-chip { min-height: 40px; padding: 0 16px; border-radius: 999px; background: #fff; color: var(--rb-ink); font-size: 15px; display: inline-flex; align-items: center; gap: 6px; flex-shrink: 0; }
+.rb-wrap .rb-chip.on { background: var(--rb-accent); color: #fff; font-weight: 500; }
+/* Selector de mes y estado de conexión */
+.rb-wrap .rb-pill { min-height: 36px; padding: 0 12px; border-radius: 999px; background: var(--rb-segment); color: var(--rb-ink); font-size: 14px; font-weight: 500; display: inline-flex; align-items: center; gap: 6px; }
+.rb-wrap .rb-round { width: 36px; height: 36px; border-radius: 50%; background: var(--rb-segment); color: var(--rb-accent); display: flex; align-items: center; justify-content: center; }
+
+/* ---------- alerta: una sola por pantalla, solo para lo que pide acción ---------- */
+.rb-wrap .rb-alert { display: flex; align-items: center; gap: 12px; padding: 14px; border-radius: 14px; background: var(--rb-attention); color: var(--rb-ink); text-align: left; width: 100%; box-sizing: border-box; }
+.rb-alert .grow { flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.rb-alert .t { font-size: 16px; font-weight: 600; }
+.rb-alert .s { font-size: 14px; color: var(--rb-attention-ink); }
+.rb-attention { color: var(--rb-attention-strong); }
+
+/* ---------- búsqueda ---------- */
+.rb-search { display: flex; align-items: center; gap: 8px; height: 44px; padding: 0 12px; border-radius: 12px; background: var(--rb-segment); color: var(--rb-muted); }
+.rb-search input { flex-grow: 1; min-width: 0; border: 0; background: transparent; color: var(--rb-ink); font-size: 16px; outline: none; }
+
+/* ---------- avisos ---------- */
+.rb-banner { border-radius: 14px; padding: 12px 14px; font-size: 14px; font-weight: 500; line-height: 1.4; display: flex; gap: 10px; align-items: flex-start; }
+.rb-banner.good { background: var(--rb-accent-soft); color: var(--rb-accent-dark); }
+.rb-banner.warn { background: var(--rb-warn-soft); color: var(--rb-warn); }
+.rb-banner.info { background: #eceef2; color: var(--rb-ink-2); }
+.rb-dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+
+/* ---------- formularios ---------- */
+.rb-field { display: flex; flex-direction: column; gap: 6px; }
+.rb-field > span { font-size: 14px; font-weight: 600; color: var(--rb-muted); padding: 0 4px; }
+.rb-input {
+  height: 48px; border-radius: 12px; border: 1px solid var(--rb-line); background: #fff;
+  padding: 0 14px; font-size: 16px; color: var(--rb-ink); width: 100%; box-sizing: border-box; outline-color: var(--rb-accent);
+}
+.rb-inline-input { border: 0; background: transparent; text-align: right; font-size: 16px; color: var(--rb-muted); min-width: 0; outline: none; }
+/* En una fila con etiqueta, la etiqueta queda en un renglón y el campo toma el resto */
+.rb-row:has(> .rb-inline-input) > .grow { flex: 0 0 auto; white-space: nowrap; }
+.rb-row > .rb-inline-input { flex: 1 1 0; }
+
+/* ---------- vacío ---------- */
+.rb-empty { background: var(--rb-card); border-radius: 14px; padding: 28px 20px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; }
+.rb-empty .t { font-weight: 600; }
+.rb-empty .s { font-size: 14px; color: var(--rb-muted); line-height: 1.45; max-width: 280px; }
+
+/* ---------- hojas inferiores ---------- */
+.rb-sheet { padding: 20px 20px calc(20px + env(safe-area-inset-bottom, 0px)); display: flex; flex-direction: column; gap: 14px; color: var(--rb-ink); font-family: var(--rb-font); }
+.rb-sheet .head { display: flex; align-items: center; gap: 10px; min-height: 40px; }
+.rb-sheet .head .t { flex-grow: 1; font-size: 18px; font-weight: 600; }
+
+/* Interruptor estilo iOS sobre un checkbox */
+.rb-switch { appearance: none; width: 51px; height: 31px; border-radius: 16px; background: var(--rb-segment); position: relative; cursor: pointer; transition: background 0.2s; flex-shrink: 0; margin: 0; }
+.rb-switch::after { content: ''; position: absolute; top: 2px; left: 2px; width: 27px; height: 27px; border-radius: 50%; background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); transition: transform 0.2s; }
+.rb-switch:checked { background: var(--rb-accent); }
+.rb-switch:checked::after { transform: translateX(20px); }
+
+/* ---------- cámara en vivo (CamaraSheet) ---------- */
+/* El escáner de ML Kit dibuja la imagen detrás del WebView: todo se vuelve transparente salvo la vista de la cámara */
+html.rb-scanning, html.rb-scanning body { background: transparent !important; --ion-background-color: transparent; }
+html.rb-scanning body { visibility: hidden; }
+html.rb-scanning .camara { visibility: visible; }
+
+/* ---------- pantallas completas dentro de Registrar (voz y cámara) ---------- */
+ion-modal.rb-full { --width: 100%; --height: 100%; --border-radius: 0; }

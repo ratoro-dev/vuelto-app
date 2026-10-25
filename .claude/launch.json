@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ionic-serve",
+      "runtimeExecutable": "ionic",
+      "runtimeArgs": ["serve", "--no-open"],
+      "port": 8100
+    }
+  ]
+}

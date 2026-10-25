@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Colores de Rumbo (src/theme/variables.css) para los widgets y atajos nativos -->
+<resources>
+    <color name="rb_accent">#16815F</color>
+    <color name="rb_warn">#B45309</color>
+    <color name="rb_ink">#111111</color>
+    <color name="rb_muted">#6B6B70</color>
+    <color name="rb_card">#FFFFFF</color>
+    <color name="rb_chip">#F2F2F7</color>
+    <color name="rb_track">#E5E5EA</color>
+</resources>

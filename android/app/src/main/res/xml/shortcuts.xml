@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Atajos al mantener apretado el ícono de Rumbo -->
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_mic"
+        android:shortcutId="dictar"
+        android:shortcutLongLabel="@string/shortcut_dictar_long"
+        android:shortcutShortLabel="@string/shortcut_dictar">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="rumbo://registrar?modo=voz&amp;escuchar=1"
+            android:targetClass="uy.rumbo.app.MainActivity"
+            android:targetPackage="uy.rumbo.app" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_qr"
+        android:shortcutId="escanear"
+        android:shortcutLongLabel="@string/shortcut_qr_long"
+        android:shortcutShortLabel="@string/shortcut_qr">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="rumbo://registrar?modo=qr"
+            android:targetClass="uy.rumbo.app.MainActivity"
+            android:targetPackage="uy.rumbo.app" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_calendar"
+        android:shortcutId="facturas"
+        android:shortcutLongLabel="@string/shortcut_facturas_long"
+        android:shortcutShortLabel="@string/shortcut_facturas">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="rumbo://facturas"
+            android:targetClass="uy.rumbo.app.MainActivity"
+            android:targetPackage="uy.rumbo.app" />
+    </shortcut>
+</shortcuts>

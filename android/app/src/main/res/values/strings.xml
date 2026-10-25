@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Rumbo</string>
+    <string name="title_activity_main">Rumbo</string>
+    <string name="package_name">uy.rumbo.app</string>
+    <string name="custom_url_scheme">uy.rumbo.app</string>
+    <string name="widget_disponible_label">Disponible</string>
+    <string name="widget_disponible_description">Lo que te queda del presupuesto del mes y accesos para registrar.</string>
+    <string name="widget_registrar_label">Registrar</string>
+    <string name="widget_registrar_description">Registrá un gasto por voz, texto, foto o el QR de la DGI.</string>
+    <string name="widget_vencimiento_label">Próximo vencimiento</string>
+    <string name="widget_vencimiento_description">La próxima factura sin pagar y cuándo vence.</string>
+    <string name="tile_dictar">Dictar gasto</string>
+    <string name="shortcut_dictar">Dictar gasto</string>
+    <string name="shortcut_dictar_long">Dictar un gasto o toda la compra</string>
+    <string name="shortcut_qr">Escanear ticket</string>
+    <string name="shortcut_qr_long">Leer el QR de la DGI de un ticket</string>
+    <string name="shortcut_facturas">Facturas</string>
+    <string name="shortcut_facturas_long">Ver lo que vence este mes</string>
+</resources>

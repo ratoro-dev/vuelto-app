@@ -1,0 +1,12 @@
+node_modules
+dist
+.DS_Store
+*.log
+.vscode/*
+!.vscode/extensions.json
+/android/app/build
+/ios/App/Pods
+
+# Datos locales de este equipo (dispositivos de prueba)
+.env.local
+.env.*.local

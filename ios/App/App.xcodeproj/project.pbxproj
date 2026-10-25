@@ -1,0 +1,984 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02943DBF5294F380BEB8E605 /* RumboWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB784C05A8C7553126AA14A /* RumboWidgetsBundle.swift */; };
+		037164F180753C4CE0E384EB /* RumboShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B707A205151903EF20D4B88 /* RumboShared.swift */; };
+		13AB724A4BC9A125FF6ADC0C /* WatchBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAF6AFC4B6EBAECA9C13886 /* WatchBridge.swift */; };
+		141C1B91F82A2545D3CE6B94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 266037EFADAC9EDE4462C6C7 /* Foundation.framework */; };
+		159A3C4AFBF1A94E88DEA10E /* RumboWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7A317F1489A7529A7FCA93D5 /* RumboWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2E02149FBF857751A1ABAA1E /* FileTranscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB180CB74F8E640CEC7C2D8E /* FileTranscriber.swift */; };
+		2FAD9763203C412B000D30F8 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2FAD9762203C412B000D30F8 /* config.xml */; };
+		3DE0B8A7CFFE460243EBD1F7 /* RumboComplications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0543C5BADA1E22A4A2FF4C73 /* RumboComplications.swift */; };
+		3E1361B5C55AC473C68F11BA /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC166A4C97F18DB111D352 /* Recorder.swift */; };
+		48ADABF839F56E7577BD4D6F /* RegistrarWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6B8106281F90E10001CA80 /* RegistrarWidget.swift */; };
+		4A7A171226000BC6DC413187 /* RumboAppIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7562C5ADCA83E5EF8105225 /* RumboAppIntents.swift */; };
+		4E266F1713254FADD491D74E /* RumboShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B707A205151903EF20D4B88 /* RumboShared.swift */; };
+		4F500D9113793728E376C422 /* Controls.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5011EB485DCA40078DB694A /* Controls.swift */; };
+		50379B232058CBB4000EE86E /* capacitor.config.json in Resources */ = {isa = PBXBuildFile; fileRef = 50379B222058CBB4000EE86E /* capacitor.config.json */; };
+		504EC3081FED79650016851F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504EC3071FED79650016851F /* AppDelegate.swift */; };
+		504EC30D1FED79650016851F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504EC30B1FED79650016851F /* Main.storyboard */; };
+		504EC30F1FED79650016851F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504EC30E1FED79650016851F /* Assets.xcassets */; };
+		504EC3121FED79650016851F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504EC3101FED79650016851F /* LaunchScreen.storyboard */; };
+		50B271D11FEDC1A000F3C39B /* public in Resources */ = {isa = PBXBuildFile; fileRef = 50B271D01FEDC1A000F3C39B /* public */; };
+		6321797556074F56D063B7E6 /* PaperVisionPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEEB21A13735BC369101A54 /* PaperVisionPlugin.swift */; };
+		660E46AD1707A62BB823F6B2 /* RumboWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BA510445D009B5A560CF13AE /* RumboWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6C644B875CF640681803D714 /* RumboWatchWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 37BBBB00E79BF4B0257AA97F /* RumboWatchWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7900DC68D82CDD9331293715 /* RumboShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B707A205151903EF20D4B88 /* RumboShared.swift */; };
+		79332BD9C96D8E203A9749A4 /* QuickParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BB0B4354738C2949F3DD7F /* QuickParse.swift */; };
+		7D026C31F80DB3BF886E58AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E628232B5202288FC45C08 /* Foundation.framework */; };
+		8064E1C60D6E78427DCDF955 /* DictadoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D793AD2FD59959C30733C0AF /* DictadoView.swift */; };
+		8FACEFA04496788742B9F607 /* RumboWidgetsPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B69825632D2EBF0CC2C558 /* RumboWidgetsPlugin.swift */; };
+		9582B6852FE996820072D4E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9582B6842FE996800072D4E8 /* SceneDelegate.swift */; };
+		A084ECDBA7D38E1E42DFC39D /* Pods_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF277DCFFFF123FFC6DF26C7 /* Pods_App.framework */; };
+		B7A0275233D342F0DCCA4A04 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8867C2B113601ECED30ECA /* MainViewController.swift */; };
+		B876363D99FD7B391DB74444 /* RumboOpenIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852F434EAA4F46592BBE3003 /* RumboOpenIntents.swift */; };
+		BFEADB5A75C8E0E8687B14B3 /* RumboOpenIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852F434EAA4F46592BBE3003 /* RumboOpenIntents.swift */; };
+		CD9A854DFEAD013C76D4D893 /* RumboShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B707A205151903EF20D4B88 /* RumboShared.swift */; };
+		D1341FCCFE64368664AB1B82 /* DisponibleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED50139596D5E613335836 /* DisponibleWidget.swift */; };
+		D1734CC1CFBB7E7E595664B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D49131BB3B9742C74DF340 /* ContentView.swift */; };
+		D829C8FB6F18077EFD141E20 /* RumboWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBEB8692F63DF4D731997A4 /* RumboWatchApp.swift */; };
+		E7B661EC7D0B21A660AE650F /* OfflineSpeechPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F625342D2E0C8D2A833408C8 /* OfflineSpeechPlugin.swift */; };
+		F50B60C97009776DFEBD9BF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 266037EFADAC9EDE4462C6C7 /* Foundation.framework */; };
+		F8F7D29D43B50BF09396DD3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624672C19F8C3CBB8F58EFED /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		418E799FCC7A67FCA4A6F147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 504EC2FC1FED79650016851F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B5C4F0258AA6F08793C4400;
+			remoteInfo = RumboWatch;
+		};
+		530FFCD30B13045C4A131962 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 504EC2FC1FED79650016851F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7484DC1EF997C81DB36B044A;
+			remoteInfo = RumboWidgets;
+		};
+		EDD95D5BEF034494015643F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 504EC2FC1FED79650016851F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B94EDDB63B7D296639E47D3A;
+			remoteInfo = RumboWatchWidgets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3858585F14B8671C0D97FE36 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				159A3C4AFBF1A94E88DEA10E /* RumboWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2C196BA39C0CBD7B5D52684 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				660E46AD1707A62BB823F6B2 /* RumboWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E934FAA6D4B7C44B76FF8770 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6C644B875CF640681803D714 /* RumboWatchWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0543C5BADA1E22A4A2FF4C73 /* RumboComplications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RumboComplications.swift; sourceTree = "<group>"; };
+		14087639AF3237ACB8B86560 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BB784C05A8C7553126AA14A /* RumboWidgetsBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RumboWidgetsBundle.swift; sourceTree = "<group>"; };
+		2491AB7465C579143F033623 /* RumboWidgets.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = RumboWidgets.entitlements; sourceTree = "<group>"; };
+		266037EFADAC9EDE4462C6C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS11.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2B707A205151903EF20D4B88 /* RumboShared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RumboShared.swift; sourceTree = "<group>"; };
+		2FAD9762203C412B000D30F8 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
+		32BB0B4354738C2949F3DD7F /* QuickParse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = QuickParse.swift; sourceTree = "<group>"; };
+		37BBBB00E79BF4B0257AA97F /* RumboWatchWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RumboWatchWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		39E628232B5202288FC45C08 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4EA8D5D13E789A8FEE26C5D4 /* RumboWatch.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = RumboWatch.entitlements; sourceTree = "<group>"; };
+		4F6B8106281F90E10001CA80 /* RegistrarWidget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrarWidget.swift; sourceTree = "<group>"; };
+		50379B222058CBB4000EE86E /* capacitor.config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = capacitor.config.json; sourceTree = "<group>"; };
+		504EC3041FED79650016851F /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		504EC3071FED79650016851F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		504EC30C1FED79650016851F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		504EC30E1FED79650016851F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		504EC3111FED79650016851F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		504EC3131FED79650016851F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50B271D01FEDC1A000F3C39B /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
+		624672C19F8C3CBB8F58EFED /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A317F1489A7529A7FCA93D5 /* RumboWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RumboWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		852F434EAA4F46592BBE3003 /* RumboOpenIntents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RumboOpenIntents.swift; sourceTree = "<group>"; };
+		89EC166A4C97F18DB111D352 /* Recorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
+		9582B6842FE996800072D4E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9E8867C2B113601ECED30ECA /* MainViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AF277DCFFFF123FFC6DF26C7 /* Pods_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF51FD2D460BCFE21FA515B2 /* Pods-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-App/Pods-App.release.xcconfig"; sourceTree = "<group>"; };
+		B0EFDAF656B61918EE4EBC81 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA510445D009B5A560CF13AE /* RumboWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RumboWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE19D99E268EFB5072635A1A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5011EB485DCA40078DB694A /* Controls.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Controls.swift; sourceTree = "<group>"; };
+		CB03304278240427C5A86309 /* App.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
+		D6D49131BB3B9742C74DF340 /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D793AD2FD59959C30733C0AF /* DictadoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DictadoView.swift; sourceTree = "<group>"; };
+		D7A6D05906CBAB5A622FE7F3 /* RumboWatchWidgets.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = RumboWatchWidgets.entitlements; sourceTree = "<group>"; };
+		DDAF6AFC4B6EBAECA9C13886 /* WatchBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WatchBridge.swift; sourceTree = "<group>"; };
+		E7562C5ADCA83E5EF8105225 /* RumboAppIntents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RumboAppIntents.swift; sourceTree = "<group>"; };
+		EB180CB74F8E640CEC7C2D8E /* FileTranscriber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FileTranscriber.swift; sourceTree = "<group>"; };
+		EEBEB8692F63DF4D731997A4 /* RumboWatchApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RumboWatchApp.swift; sourceTree = "<group>"; };
+		EFED50139596D5E613335836 /* DisponibleWidget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisponibleWidget.swift; sourceTree = "<group>"; };
+		F625342D2E0C8D2A833408C8 /* OfflineSpeechPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OfflineSpeechPlugin.swift; sourceTree = "<group>"; };
+		F8B69825632D2EBF0CC2C558 /* RumboWidgetsPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RumboWidgetsPlugin.swift; sourceTree = "<group>"; };
+		FC68EB0AF532CFC21C3344DD /* Pods-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App/Pods-App.debug.xcconfig"; sourceTree = "<group>"; };
+		FCEEB21A13735BC369101A54 /* PaperVisionPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaperVisionPlugin.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2837AA65910608AA40938C5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D026C31F80DB3BF886E58AE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49573ABE45CD9C234C389D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				141C1B91F82A2545D3CE6B94 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504EC3011FED79650016851F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A084ECDBA7D38E1E42DFC39D /* Pods_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5280BCB1D2DFF76641B0620E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50B60C97009776DFEBD9BF6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27E2DDA53C4D2A4D1A88CE4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF277DCFFFF123FFC6DF26C7 /* Pods_App.framework */,
+				E2F6578F225500A828F02448 /* iOS */,
+				3D6EDE12B63BB1F1B13801F5 /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		393E97021A41E303F8AE403A /* RumboWatch */ = {
+			isa = PBXGroup;
+			children = (
+				EEBEB8692F63DF4D731997A4 /* RumboWatchApp.swift */,
+				D6D49131BB3B9742C74DF340 /* ContentView.swift */,
+				624672C19F8C3CBB8F58EFED /* Assets.xcassets */,
+				14087639AF3237ACB8B86560 /* Info.plist */,
+				4EA8D5D13E789A8FEE26C5D4 /* RumboWatch.entitlements */,
+				32BB0B4354738C2949F3DD7F /* QuickParse.swift */,
+				89EC166A4C97F18DB111D352 /* Recorder.swift */,
+				D793AD2FD59959C30733C0AF /* DictadoView.swift */,
+			);
+			name = RumboWatch;
+			path = RumboWatch;
+			sourceTree = "<group>";
+		};
+		3D6EDE12B63BB1F1B13801F5 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				266037EFADAC9EDE4462C6C7 /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		504EC2FB1FED79650016851F = {
+			isa = PBXGroup;
+			children = (
+				504EC3061FED79650016851F /* App */,
+				504EC3051FED79650016851F /* Products */,
+				7F8756D8B27F46E3366F6CEA /* Pods */,
+				27E2DDA53C4D2A4D1A88CE4A /* Frameworks */,
+				A5912169E712958FD0BABA22 /* RumboWidgets */,
+				393E97021A41E303F8AE403A /* RumboWatch */,
+				7E7339F3AACB5171EF0C2A37 /* RumboWatchWidgets */,
+			);
+			sourceTree = "<group>";
+		};
+		504EC3051FED79650016851F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				504EC3041FED79650016851F /* App.app */,
+				BA510445D009B5A560CF13AE /* RumboWidgets.appex */,
+				7A317F1489A7529A7FCA93D5 /* RumboWatch.app */,
+				37BBBB00E79BF4B0257AA97F /* RumboWatchWidgets.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		504EC3061FED79650016851F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9582B6842FE996800072D4E8 /* SceneDelegate.swift */,
+				50379B222058CBB4000EE86E /* capacitor.config.json */,
+				504EC3071FED79650016851F /* AppDelegate.swift */,
+				504EC30B1FED79650016851F /* Main.storyboard */,
+				504EC30E1FED79650016851F /* Assets.xcassets */,
+				504EC3101FED79650016851F /* LaunchScreen.storyboard */,
+				504EC3131FED79650016851F /* Info.plist */,
+				2FAD9762203C412B000D30F8 /* config.xml */,
+				50B271D01FEDC1A000F3C39B /* public */,
+				FCEEB21A13735BC369101A54 /* PaperVisionPlugin.swift */,
+				9E8867C2B113601ECED30ECA /* MainViewController.swift */,
+				F625342D2E0C8D2A833408C8 /* OfflineSpeechPlugin.swift */,
+				8A1360AD73A958D5A8F237B0 /* Shared */,
+				F8B69825632D2EBF0CC2C558 /* RumboWidgetsPlugin.swift */,
+				E7562C5ADCA83E5EF8105225 /* RumboAppIntents.swift */,
+				CB03304278240427C5A86309 /* App.entitlements */,
+				DDAF6AFC4B6EBAECA9C13886 /* WatchBridge.swift */,
+				EB180CB74F8E640CEC7C2D8E /* FileTranscriber.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7E7339F3AACB5171EF0C2A37 /* RumboWatchWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				0543C5BADA1E22A4A2FF4C73 /* RumboComplications.swift */,
+				B0EFDAF656B61918EE4EBC81 /* Info.plist */,
+				D7A6D05906CBAB5A622FE7F3 /* RumboWatchWidgets.entitlements */,
+			);
+			name = RumboWatchWidgets;
+			path = RumboWatchWidgets;
+			sourceTree = "<group>";
+		};
+		7F8756D8B27F46E3366F6CEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC68EB0AF532CFC21C3344DD /* Pods-App.debug.xcconfig */,
+				AF51FD2D460BCFE21FA515B2 /* Pods-App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A1360AD73A958D5A8F237B0 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2B707A205151903EF20D4B88 /* RumboShared.swift */,
+				852F434EAA4F46592BBE3003 /* RumboOpenIntents.swift */,
+			);
+			name = Shared;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A5912169E712958FD0BABA22 /* RumboWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				1BB784C05A8C7553126AA14A /* RumboWidgetsBundle.swift */,
+				EFED50139596D5E613335836 /* DisponibleWidget.swift */,
+				4F6B8106281F90E10001CA80 /* RegistrarWidget.swift */,
+				C5011EB485DCA40078DB694A /* Controls.swift */,
+				BE19D99E268EFB5072635A1A /* Info.plist */,
+				2491AB7465C579143F033623 /* RumboWidgets.entitlements */,
+			);
+			name = RumboWidgets;
+			path = RumboWidgets;
+			sourceTree = "<group>";
+		};
+		E2F6578F225500A828F02448 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				39E628232B5202288FC45C08 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		504EC3031FED79650016851F /* App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 504EC3161FED79650016851F /* Build configuration list for PBXNativeTarget "App" */;
+			buildPhases = (
+				6634F4EFEBD30273BCE97C65 /* [CP] Check Pods Manifest.lock */,
+				504EC3001FED79650016851F /* Sources */,
+				504EC3011FED79650016851F /* Frameworks */,
+				504EC3021FED79650016851F /* Resources */,
+				9592DBEFFC6D2A0C8D5DEB22 /* [CP] Embed Pods Frameworks */,
+				AD454EF7D8FBB8AE0597F939 /* [CP] Copy Pods Resources */,
+				B2C196BA39C0CBD7B5D52684 /* Embed Foundation Extensions */,
+				3858585F14B8671C0D97FE36 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F476A0C51D912E4E7667DF1 /* PBXTargetDependency */,
+				588F6B855BB3057C9258FCE5 /* PBXTargetDependency */,
+			);
+			name = App;
+			productName = App;
+			productReference = 504EC3041FED79650016851F /* App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5B5C4F0258AA6F08793C4400 /* RumboWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20699DEF4A0F4F54E0509980 /* Build configuration list for PBXNativeTarget "RumboWatch" */;
+			buildPhases = (
+				A12029FAAD4DEB089312B67C /* Sources */,
+				5280BCB1D2DFF76641B0620E /* Frameworks */,
+				63B5EFD013E32C8C3AD18BCE /* Resources */,
+				E934FAA6D4B7C44B76FF8770 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DB4FF551408C499424BCC0E /* PBXTargetDependency */,
+			);
+			name = RumboWatch;
+			productName = RumboWatch;
+			productReference = 7A317F1489A7529A7FCA93D5 /* RumboWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7484DC1EF997C81DB36B044A /* RumboWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7300127E184929A01F3DA957 /* Build configuration list for PBXNativeTarget "RumboWidgets" */;
+			buildPhases = (
+				0FBF73CA47EA90076CB22684 /* Sources */,
+				2837AA65910608AA40938C5D /* Frameworks */,
+				AD48D1B55EE321C039A3A13B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RumboWidgets;
+			productName = RumboWidgets;
+			productReference = BA510445D009B5A560CF13AE /* RumboWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B94EDDB63B7D296639E47D3A /* RumboWatchWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1F0AF73D9516841C6B6E034 /* Build configuration list for PBXNativeTarget "RumboWatchWidgets" */;
+			buildPhases = (
+				0907B89EEC4D06F43FFE2D9E /* Sources */,
+				49573ABE45CD9C234C389D33 /* Frameworks */,
+				61E4F9C7784F605EACEF0F47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RumboWatchWidgets;
+			productName = RumboWatchWidgets;
+			productReference = 37BBBB00E79BF4B0257AA97F /* RumboWatchWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		504EC2FC1FED79650016851F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				TargetAttributes = {
+					504EC3031FED79650016851F = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1100;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 504EC2FF1FED79650016851F /* Build configuration list for PBXProject "App" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = es;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+			);
+			mainGroup = 504EC2FB1FED79650016851F;
+			productRefGroup = 504EC3051FED79650016851F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				504EC3031FED79650016851F /* App */,
+				7484DC1EF997C81DB36B044A /* RumboWidgets */,
+				5B5C4F0258AA6F08793C4400 /* RumboWatch */,
+				B94EDDB63B7D296639E47D3A /* RumboWatchWidgets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		504EC3021FED79650016851F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504EC3121FED79650016851F /* LaunchScreen.storyboard in Resources */,
+				50B271D11FEDC1A000F3C39B /* public in Resources */,
+				504EC30F1FED79650016851F /* Assets.xcassets in Resources */,
+				50379B232058CBB4000EE86E /* capacitor.config.json in Resources */,
+				504EC30D1FED79650016851F /* Main.storyboard in Resources */,
+				2FAD9763203C412B000D30F8 /* config.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E4F9C7784F605EACEF0F47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63B5EFD013E32C8C3AD18BCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8F7D29D43B50BF09396DD3B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD48D1B55EE321C039A3A13B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6634F4EFEBD30273BCE97C65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9592DBEFFC6D2A0C8D5DEB22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-App/Pods-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD454EF7D8FBB8AE0597F939 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-App/Pods-App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0907B89EEC4D06F43FFE2D9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE0B8A7CFFE460243EBD1F7 /* RumboComplications.swift in Sources */,
+				CD9A854DFEAD013C76D4D893 /* RumboShared.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FBF73CA47EA90076CB22684 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02943DBF5294F380BEB8E605 /* RumboWidgetsBundle.swift in Sources */,
+				D1341FCCFE64368664AB1B82 /* DisponibleWidget.swift in Sources */,
+				48ADABF839F56E7577BD4D6F /* RegistrarWidget.swift in Sources */,
+				4F500D9113793728E376C422 /* Controls.swift in Sources */,
+				7900DC68D82CDD9331293715 /* RumboShared.swift in Sources */,
+				BFEADB5A75C8E0E8687B14B3 /* RumboOpenIntents.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504EC3001FED79650016851F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504EC3081FED79650016851F /* AppDelegate.swift in Sources */,
+				9582B6852FE996820072D4E8 /* SceneDelegate.swift in Sources */,
+				6321797556074F56D063B7E6 /* PaperVisionPlugin.swift in Sources */,
+				B7A0275233D342F0DCCA4A04 /* MainViewController.swift in Sources */,
+				E7B661EC7D0B21A660AE650F /* OfflineSpeechPlugin.swift in Sources */,
+				037164F180753C4CE0E384EB /* RumboShared.swift in Sources */,
+				B876363D99FD7B391DB74444 /* RumboOpenIntents.swift in Sources */,
+				8FACEFA04496788742B9F607 /* RumboWidgetsPlugin.swift in Sources */,
+				4A7A171226000BC6DC413187 /* RumboAppIntents.swift in Sources */,
+				13AB724A4BC9A125FF6ADC0C /* WatchBridge.swift in Sources */,
+				2E02149FBF857751A1ABAA1E /* FileTranscriber.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12029FAAD4DEB089312B67C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D829C8FB6F18077EFD141E20 /* RumboWatchApp.swift in Sources */,
+				D1734CC1CFBB7E7E595664B2 /* ContentView.swift in Sources */,
+				4E266F1713254FADD491D74E /* RumboShared.swift in Sources */,
+				79332BD9C96D8E203A9749A4 /* QuickParse.swift in Sources */,
+				3E1361B5C55AC473C68F11BA /* Recorder.swift in Sources */,
+				8064E1C60D6E78427DCDF955 /* DictadoView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		588F6B855BB3057C9258FCE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RumboWatch;
+			target = 5B5C4F0258AA6F08793C4400 /* RumboWatch */;
+			targetProxy = 418E799FCC7A67FCA4A6F147 /* PBXContainerItemProxy */;
+		};
+		5F476A0C51D912E4E7667DF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RumboWidgets;
+			target = 7484DC1EF997C81DB36B044A /* RumboWidgets */;
+			targetProxy = 530FFCD30B13045C4A131962 /* PBXContainerItemProxy */;
+		};
+		8DB4FF551408C499424BCC0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RumboWatchWidgets;
+			target = B94EDDB63B7D296639E47D3A /* RumboWatchWidgets */;
+			targetProxy = EDD95D5BEF034494015643F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		504EC30B1FED79650016851F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				504EC30C1FED79650016851F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		504EC3101FED79650016851F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				504EC3111FED79650016851F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2508222561FB389B65D68963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RumboWatch/RumboWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UUPAXS7TLU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RumboWatch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Rumbo;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uy.rumbo.app.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		504EC3141FED79650016851F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		504EC3151FED79650016851F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		504EC3171FED79650016851F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC68EB0AF532CFC21C3344DD /* Pods-App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UUPAXS7TLU;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-DDEBUG\"";
+				PRODUCT_BUNDLE_IDENTIFIER = uy.rumbo.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		504EC3181FED79650016851F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF51FD2D460BCFE21FA515B2 /* Pods-App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UUPAXS7TLU;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uy.rumbo.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		61814BB18AAC276DDC0426E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = RumboWidgets/RumboWidgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UUPAXS7TLU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RumboWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Rumbo;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uy.rumbo.app.widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C5C24F9FBB4C912B254534F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RumboWatch/RumboWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UUPAXS7TLU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RumboWatch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Rumbo;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uy.rumbo.app.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		7D003D0C0D26B10EE15B632C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = RumboWidgets/RumboWidgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UUPAXS7TLU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RumboWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Rumbo;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uy.rumbo.app.widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6DCEA0E8CA63CA4E03285B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RumboWatchWidgets/RumboWatchWidgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UUPAXS7TLU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RumboWatchWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Rumbo;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uy.rumbo.app.watchkitapp.widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		C3A9F8AEA3BD5AA2377A1C68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RumboWatchWidgets/RumboWatchWidgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UUPAXS7TLU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RumboWatchWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Rumbo;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uy.rumbo.app.watchkitapp.widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20699DEF4A0F4F54E0509980 /* Build configuration list for PBXNativeTarget "RumboWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2508222561FB389B65D68963 /* Release */,
+				7C5C24F9FBB4C912B254534F /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		504EC2FF1FED79650016851F /* Build configuration list for PBXProject "App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504EC3141FED79650016851F /* Debug */,
+				504EC3151FED79650016851F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		504EC3161FED79650016851F /* Build configuration list for PBXNativeTarget "App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504EC3171FED79650016851F /* Debug */,
+				504EC3181FED79650016851F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7300127E184929A01F3DA957 /* Build configuration list for PBXNativeTarget "RumboWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D003D0C0D26B10EE15B632C /* Release */,
+				61814BB18AAC276DDC0426E1 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1F0AF73D9516841C6B6E034 /* Build configuration list for PBXNativeTarget "RumboWatchWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3A9F8AEA3BD5AA2377A1C68 /* Release */,
+				B6DCEA0E8CA63CA4E03285B6 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 504EC2FC1FED79650016851F /* Project object */;
+}
